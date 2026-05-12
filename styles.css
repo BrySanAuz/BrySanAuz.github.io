@@ -1,0 +1,370 @@
+/* Reset básico y estilos globales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@200;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* barra superior */
+body {
+  background-image: 
+        linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+        url('IMG_1301.JPG');
+    background-size: auto;
+    background-position: top; /*imagen de fondo*/
+    font-family: 'DM Sans', sans-serif; /*tipo de fuente general*/
+    line-height: 1.6; /*espaciado de lineas*/
+    color: black; /*color que no se define posteriormente*/
+    background-color: black; /*cambio de color de fondo*/
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: black; /*color de la barra superior*/
+  border-bottom: 1px solid #e5e5e5; /*ancho de la linea divisoria*/
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px; /*alto de la barra */
+  font-family: 'DM Sans', sans-serif;
+  transition: background 0.5s, padding 0.4s;
+}
+
+/*nav.scrolled {
+  background: rgba(7,9,8,0.96);
+  border-bottom: 0.5px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  padding: 14px 52px;
+} */
+
+/* Logo y nombre */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+
+
+/*.brand-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}*/
+
+/* Botón hamburguesa
+.hamburger {
+  background: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+}
+
+.hamburger:hover {
+  background: #f5f5f5;
+}
+
+.bar {
+  width: 20px;
+  height: 1.5px;
+  background: #111;
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.2s; 
+}*/
+
+/* Animación X al abrir
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}*/
+
+/* Menú desplegable
+.drop-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 2rem;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 6px;
+  min-width: 200px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: opacity 0.18s, transform 0.18s;
+  z-index: 100;
+}
+
+.drop-menu.open {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.drop-menu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+.drop-menu a:hover {
+  background: #f5f5f5;
+}*/
+
+/*.titulo {
+  display: contents;
+  align-items: center;
+}*/
+
+
+
+/* Encabezado y navegación */
+/*.descrip {
+  background-color: white;
+    color: black;
+    font-size: 10rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 2rem;
+}*/
+
+/*header h1 {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    border-radius: 2px;
+} */
+
+
+nav ul {
+    background-color: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem; /* tamaño de la fuente de opciones de navegacion*/
+    gap: 3rem; /*espaciado entre opciones de navegacion*/
+    padding: 2rem; /*espacio entre el recuadro imaginario que lo recubre*/
+    /*margin-top: 1rem;*/
+}
+
+nav ul a {
+    background-color: BLACK; /*color de fondo de opciones de navegación*/
+    color: grey; /*color del texto*/
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/*.titulo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  width: 800px;
+  height: 200px;
+  border-radius: 5px;
+}*/
+
+/*section {
+  background-image: 
+        linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+        url('IMG_1301.JPG');
+    background-size: cover;
+    background-position: top;
+}*/
+
+/*header {
+  background-image: 
+        linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+        url('IMG_1301.JPG');
+    background-size: cover;
+    background-position: top;
+}*/
+
+
+header h1 {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 15rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7),
+                 0 0 20px rgba(0, 0, 0, 0.5);
+    /*text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transition: text-shadow 0.3s ease;*/
+}
+
+/*.titulo1 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transition: text-shadow 0.3s ease;
+}
+
+.titulo1:hover {
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}*/
+
+header h2 {
+    font-size: 5rem;
+    font-weight: 300; 
+    font-style: italic;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 18rem;
+    color: white;
+    font-family: "Cormorant Garamont", Serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7),
+                 0 0 20px rgba(0, 0, 0, 0.5);
+    /*text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    transition: text-shadow 0.3s ease;*/
+}
+
+/*header h2:hover {
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}*/
+
+
+main {
+  background-color: white;
+  /*margin-top: 10px;*/
+}
+
+
+/* Sección principal */
+.hero {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-family: Poppin, sans-serif;
+    /*border-radius: 10px;*/
+}
+
+main section h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: black;
+    /*text-shadow: 0 0 10px rgba(0, 0, 0, 0.7),
+                 0 0 20px rgba(0, 0, 0, 0.5);*/
+}
+
+main section ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.planurb {
+   width: 350px;
+   height: 400px;
+   border-radius: 5px;
+}
+
+.cart {
+   width: 350px;
+   height: 400px;
+   border-radius: 5px; 
+}
+
+.paisaje {
+   width: 350px;
+   height: 400px;
+   border-radius: 5px; 
+}
+
+.habit {
+   width: 350px;
+   height: 400px;
+   border-radius: 5px; 
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+/* Tarjetas de características */
+/*.caracteristicas {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.tarjeta h3 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}*/
+
+/* Pie de página */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+
