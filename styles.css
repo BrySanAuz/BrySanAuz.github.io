@@ -12,10 +12,10 @@ body {
     background-image: 
         linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
         url('IMG_1301.JPG');
-    background-size: auto;
-    background-position: top; /*imagen de fondo*/
-    width: 100%;
-    min-height: 100vh
+    background-size: cover;
+    background-position: center; /*imagen de fondo*/
+    background-attachment: fixed;
+    background-repeat: no repeat;
     font-family: 'DM Sans', sans-serif; /*tipo de fuente general*/
     line-height: 1.6; /*espaciado de lineas*/
     color: black; /*color que no se define posteriormente*/
@@ -29,11 +29,11 @@ nav {
   right: 0;
   background: black; /*color de la barra superior*/
   border-bottom: 1px solid #e5e5e5; /*ancho de la linea divisoria*/
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px; /*alto de la barra */
+  height: 60px; /*alto de la barra */
   font-family: 'DM Sans', sans-serif;
   transition: background 0.5s, padding 0.4s;
 }
@@ -54,8 +54,8 @@ nav {
 }
 
 .logo {
-  width: 200px;
-  height: 60px;
+  width: 100px;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -174,16 +174,29 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    font-size: 1.4rem; /* tamaño de la fuente de opciones de navegacion*/
-    gap: 3rem; /*espaciado entre opciones de navegacion*/
-    padding: 2rem; /*espacio entre el recuadro imaginario que lo recubre*/
+    font-size: 1rem; /* tamaño de la fuente de opciones de navegacion*/
+    gap: 2rem; /*espaciado entre opciones de navegacion*/
+    padding: 1rem; /*espacio entre el recuadro imaginario que lo recubre*/
     /*margin-top: 1rem;*/
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem
+        font-size: 0.9rem
+        padding: 0.5rem
+    }
+
+    .logo {
+        width:80px
+    }
 }
 
 nav ul a {
     background-color: BLACK; /*color de fondo de opciones de navegación*/
     color: grey; /*color del texto*/
     text-decoration: none;
+    white-space: nowrap;
 }
 
 nav ul a:hover {
@@ -218,7 +231,7 @@ nav ul a:hover {
 
 
 header h1 {
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 4vw, 1.6rem);
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     padding: 1rem;
@@ -241,7 +254,7 @@ header h1 {
 }*/
 
 header h2 {
-    font-size: 5rem;
+    font-size: clamp(2rem, 6vw, 5rem);
     font-weight: 300; 
     font-style: italic;
     padding: 1rem;
@@ -280,7 +293,7 @@ main {
 }
 
 main section h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
     padding: 1rem;
     text-align: center;
     margin-top: 1rem;
@@ -294,10 +307,13 @@ main section ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
-    gap: 5rem;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    gap: 1.5rem;
     padding: 1rem;
 }
+
+<!--continuar aqui -->
 
 .planurb {
    width: 350px;
