@@ -9,13 +9,13 @@
 
 /* barra superior */
 body {
-    width: 100%;
-    min-height: 100vh
     background-image: 
         linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
         url('IMG_1301.JPG');
     background-size: auto;
     background-position: top; /*imagen de fondo*/
+    width: 100%;
+    min-height: 100vh
     font-family: 'DM Sans', sans-serif; /*tipo de fuente general*/
     line-height: 1.6; /*espaciado de lineas*/
     color: black; /*color que no se define posteriormente*/
