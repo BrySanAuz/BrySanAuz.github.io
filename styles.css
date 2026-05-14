@@ -9,7 +9,9 @@
 
 /* barra superior */
 body {
-  background-image: 
+    width: 100%;
+    min-height: 100vh
+    background-image: 
         linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
         url('IMG_1301.JPG');
     background-size: auto;
