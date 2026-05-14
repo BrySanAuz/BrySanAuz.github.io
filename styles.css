@@ -262,6 +262,7 @@ header h2 {
 
 
 main {
+    width: 100%;
   background-color: white;
   /*margin-top: 10px;*/
 }
