@@ -47,11 +47,11 @@ nav {
 
 /* Logo y nombre */
 .brand {
+  margin-left: 10px;  
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
-    margin-left: 10px;
 }
 
 .logo {
