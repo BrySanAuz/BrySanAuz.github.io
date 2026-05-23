@@ -64,6 +64,8 @@ nav {
   width: 200px;
   height: auto;
   border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 
@@ -76,6 +78,7 @@ nav {
   letter-spacing: 1px;     /* Espaciado entre letras */
   font-family: 'DM Sans', sans-serif;
   white-space: nowrap;
+  margin-left: 10px;
 }
 
 /* Botón hamburguesa
@@ -387,12 +390,70 @@ main {
 /* Sección principal */
 .hero {
     background-color: white;
-    color: black;
+    color: #1f5142;
     text-align: center;
     padding: 1rem;
     margin: 0.5rem;
-    font-family: Poppin, sans-serif;
+    font-family: DM Sans, Sans serif;
     /*border-radius: 10px;*/
+}
+
+.frase1 {
+    display: block;
+    font-size: 1.5rem;
+    font-family: DM Serif Display, serif;
+    color: #ca2f3f;
+    text-align: left;
+    padding: 0.5rem;
+    margin-top: 100px;
+    margin-left: 5px;
+}
+
+.frase2 {
+    display: block;
+    font-family: DM sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ca2f3f;
+    text-align: left;
+    padding: 0.1rem;
+    margin-left: 1px;
+    margin-bottom: 5px;
+}
+
+.frase3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 50;
+    color: #1f5142;
+    padding: 0.1rem;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.frase3i {
+    font-family: DM sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 50;
+    text-align: left;
+}
+
+.frase3d {
+    font-family: DM sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 50;
+    text-align: right;
+}
+
+.frase3d1 {
+    font-family: DM Serif Display, serif;
+    font-size: 1rem;
+    font-weight: 50;
+    font-style: italic;
+    text-align: right;
 }
 
 main section h2 {
